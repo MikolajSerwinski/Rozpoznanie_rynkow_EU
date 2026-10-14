@@ -16,5 +16,6 @@ Projekt zaliczeniowy z przedmiotu **Inżynieria danych**. Potok danych oraz apli
    ```bash
    cp .env.example .env
 3. Zainstaluj zależności i uruchom potok pobierania danych z pomocą uv:
+    ```bash
     uv sync
     uv run python -m src.run_pipeline
