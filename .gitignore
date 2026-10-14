@@ -1,0 +1,16 @@
+# Środowisko i Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Konfiguracja lokalna
+.env
+
+# Dane (ignorujemy zawartość, ale zachowujemy strukturę folderów dzięki .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/silver/*
+!data/silver/.gitkeep
+data/gold/*
+!data/gold/.gitkeep
