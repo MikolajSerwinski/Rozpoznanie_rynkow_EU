@@ -31,3 +31,10 @@
 * **Plany na Tydzień 4:**
   * Kompleksowy test powtarzalności uruchomienia projektu "na czysto" na podstawie instrukcji w `README.md`.
   * Finalny przegląd dokumentacji, kodu i przygotowanie prezentacji na obronę projektu.
+
+  ## Etap 4 (`etap-4`)
+* **Zrealizowane zadania:**
+  * Dodano testy jednostkowe transformacji (`tests/test_unit_transformations.py`) sprawdzające poprawność dekodowania struktury JSON-stat 2.0 w izolacji od zewnętrznych API.
+  * Przeprowadzono pełny test powtarzalności (Reproducibility Audit) – usunięto dane lokalne i zweryfikowano poprawne przejście całego potoku (`src.run_pipeline`) oraz uruchomienie aplikacji (`app/dashboard.py`) wyłącznie na podstawie instrukcji w `README.md`.
+  * Sfinalizowano plik `README.md` (cel projektu, architektura, struktura katalogów, instrukcja uruchomienia dla Windows i Linux/macOS) oraz zweryfikowano kompletność wszystkich 5 dokumentów w katalogu `docs/`.
+  * Sprawdzono czystość repozytorium Git pod kątem braku sekretów, plików tymczasowych i zahardkodowanych ścieżek lokalnych oraz oznaczono wydanie końcowe tagiem `tydzien-4`.

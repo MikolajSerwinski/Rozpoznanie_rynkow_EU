@@ -19,8 +19,8 @@ def main():
     print("\n=== ETAP 3: MODEL ANALITYCZNY (WARSTWA GOLD - DUCKDB & PARQUET) ===")
     run_gold_transformations()
     
-    print("\n=== ETAP 4: AUTOMATYCZNE TESTY JAKOŚCI DANYCH (PYTEST) ===")
-    result = subprocess.run([sys.executable, "-m", "pytest", "-v", "tests/test_data_quality.py"])
+    print("\n=== ETAP 4: TESTY JEDNOSTKOWE I TESTY JAKOŚCI DANYCH (PYTEST) ===")
+    result = subprocess.run([sys.executable, "-m", "pytest", "-v", "tests/"])
     if result.returncode != 0:
         print("\n[BŁĄD KRYTYCZNY] Testy jakości danych nie powiodły się! Sprawdź logi powyżej.")
         sys.exit(result.returncode)
